@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+.main {
+	width: 960px;
+	height: 600px;
+	background: black;
+	margin: 10px auto;
+	position: relative;
+}
+.img {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation-name: head;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes head {
+	0% {background: transparent;}
+	25% {background: url('img/samiullah.gif') no-repeat center / cover;}
+	50% {
+		background: url('img/200w.gif') no-repeat center / contain;
+	}
+	75% {
+		background: url('img/سُبحٰناللہ-allah.gif') no-repeat center / contain;
+	}
+	100% {
+		background: url('img/love-you.gif') no-repeat center / contain;
+	}
+}
+
+
+
+
+.bg {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transition: 1s;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/* animation-delay: 5s; */
+	border-radius: 50%;
+	
+	animation-duration: 3s;
+}
+.bg1 {
+	background: transparent;
+	animation-name: bg1;
+	animation-fill-mode: forwards;
+
+}
+@keyframes bg1 {
+	0% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	50% {
+		top: 0%;
+		left: 0%;
+		transform: translate(-0%,-0%);
+		background: red;
+	}
+	100% {
+		top: 0%;
+		left: 0%;
+		transform: translate(-0%,-0%);
+		background: transparent;
+		border-radius: 0;
+		border-bottom-right-radius: 50%;
+	}
+}
+
+.bg2 {
+	background: transparent;
+	animation-name: bg2;
+	animation-fill-mode: forwards;
+	background: transparent;
+}
+@keyframes bg2 {
+	0% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	50% {
+		top: 0%;
+		right: 0;
+		transform: translate(220%,-0%);
+		background: green;
+	}
+	100% {
+		top: 0%;
+		right: 0;
+		transform: translate(220%,-0%);
+		background: transparent;
+		border-radius: 0;
+		border-bottom-left-radius: 50%;
+	}
+}
+
+.bg3 {
+	background: transparent;
+	animation-name: bg3;
+	animation-fill-mode: forwards;
+}
+@keyframes bg3 {
+	0% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	50% {
+		bottom: 0;
+		left: 0;
+		transform: translate(0%,100%);
+		background: blue;
+	}
+	100% {
+		bottom: 0;
+		left: 0;
+		transform: translate(0%,100%);
+		background: transparent;
+		border-radius: 0;
+		border-top-right-radius: 50%;
+	}
+}
+.bg4 {
+	background: transparent;
+	animation-name: bg4;
+	animation-fill-mode: forwards;
+}
+@keyframes bg4 {
+	0% {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	50% {
+		bottom: 0%;
+		right: 0%;
+		transform: translate(220%,100%);
+		background: yellow;
+	}
+	100% {
+		bottom: 0%;
+		right: 0%;
+		transform: translate(220%,100%);
+		background: transparent;
+		border-radius: 0;
+		border-top-left-radius: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
